@@ -3,8 +3,8 @@
 <nav id="menu">
 	<ul>
 		<li>ORGAB</li>
-		<li><a href="#">Livros</a></li>
-		<li><a href="#">Emprestimos</a></li>
+		<li><a href="livros">Livros</a></li>
+		<li><a href="emprestimos">Emprestimos</a></li>
 		<li><a href="#">Álbuns fotográfios</a></li>
 		<li><a href="#">Usuários</a></li>
 	</ul>
