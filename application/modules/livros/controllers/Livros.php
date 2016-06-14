@@ -26,7 +26,7 @@ class Livros extends CI_Controller {
         $data           = [];
         $data['livros']  = $livros;
         $this->load->view('layout/header');
-        /*$this->load->view('layout/menu');*/
+        $this->load->view('layout/menu');
         $this->load->view('livros/list', $data);
         $this->load->view('layout/footer');
     }
