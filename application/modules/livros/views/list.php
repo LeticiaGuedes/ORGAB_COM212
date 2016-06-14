@@ -22,38 +22,46 @@
                 <div class="panel panel-primary">
                     <!-- Titulo do Livro -->
                     <div class="panel-heading">
+                        <span style="font-weight:bold;font-size:16px;">Titulo: </span>
                         <?php echo $livro->titulo ?>
                     </div>
 
                     <!-- Autor do Livro -->
                     <div class="panel-body">
+                        <span style="font-weight:bold;font-size:16px;">Autor: </span>
                         <?php echo $livro->autor ?>
                     </div>
                     <!-- Prateleira do Livro -->
                     <div class="panel-heading">
+                        <span style="font-weight:bold;font-size:16px;">Prateleira: </span>
                         <?php echo $livro->prateleira ?>
                     </div>
 
                     <!-- Edição do Livro -->
                     <div class="panel-body">
+                        <span style="font-weight:bold;font-size:16px;">Edição: </span>
                         <?php echo $livro->edicao ?>
                     </div>
                     <!-- Ano do Livro -->
                     <div class="panel-heading">
+                        <span style="font-weight:bold;font-size:16px;">Ano: </span>
                         <?php echo $livro->ano ?>
                     </div>
 
                     <!-- Assunto do Livro -->
                     <div class="panel-body">
                         <?php echo $livro->assunto ?>
+                        <span style="font-weight:bold;font-size:16px;">Assunto: </span>
                     </div>
                     <!-- Idioma do Livro -->
                     <div class="panel-heading">
+                        <span style="font-weight:bold;font-size:16px;">Idioma: </span>
                         <?php echo $livro->idioma ?>
                     </div>
 
                     <!-- Editora do Livro -->
                     <div class="panel-body">
+                        <span style="font-weight:bold;font-size:16px;">Editora: </span>
                         <?php echo $livro->editora ?>
                     </div>
 

@@ -10,7 +10,7 @@
   http://getbootstrap.com/css/#forms
 -->
 <form action="<?php echo base_url('usuarios') ?>" method="post">
-    <h3>Novo usuario</h3>
+    <h3>Novo usuário</h3>
 
     <?php if(isset($_POST['nome'])): ?>
         <!-- Se for enviado um post -->

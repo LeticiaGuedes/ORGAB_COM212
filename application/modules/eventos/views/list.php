@@ -22,29 +22,35 @@
                 <div class="panel panel-primary">
                     <!-- Nome do evento -->
                     <div class="panel-heading">
+                        <span style="font-weight:bold;font-size:16px;">Nome: </span>
                         <?php echo $evento->nome ?>
                     </div>
 
                     <!-- Álbum do evento -->
                     <div class="panel-body">
+                        <span style="font-weight:bold;font-size:16px;">Álbum: </span>
                         <?php echo $evento->album ?>
                     </div>
                     <!-- Prateleira do evento -->
                     <div class="panel-heading">
+                        <span style="font-weight:bold;font-size:16px;">Prateleira: </span>
                         <?php echo $evento->prateleira ?>
                     </div>
 
                     <!-- Ano do evento -->
                     <div class="panel-body">
+                        <span style="font-weight:bold;font-size:16px;">Ano: </span>
                         <?php echo $evento->ano ?>
                     </div>
                     <!-- Cor do álbum do evento -->
                     <div class="panel-heading">
+                        <span style="font-weight:bold;font-size:16px;">Cor do álbum: </span>
                         <?php echo $evento->cor_album ?>
                     </div>
 
                     <!-- Cor do adesivo do álbum -->
                     <div class="panel-body">
+                        <span style="font-weight:bold;font-size:16px;">Cor do adesivo: </span>
                         <?php echo $evento->cor_adesivo ?>
                     </div>
 

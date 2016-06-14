@@ -22,20 +22,24 @@
                 <div class="panel panel-primary">
                     <!-- Data do emprestimo -->
                     <div class="panel-heading">
+                        <span style="font-weight:bold;font-size:16px;">Data do empretimo: </span>
                         <?php echo $emprestimo->data_emprestimo ?>
                     </div>
 
                     <!-- Data de Devolução do emprestimo -->
                     <div class="panel-body">
+                        <span style="font-weight:bold;font-size:16px;">Data de devolução: </span>
                         <?php echo $emprestimo->data_devolucao ?>
                     </div>
                     <!-- Nome do Livro Emprestado -->
                     <div class="panel-heading">
+                        <span style="font-weight:bold;font-size:16px;">Nome do livro: </span>
                         <?php echo $emprestimo->id_livro ?>
                     </div>
 
                     <!-- Usuário do emprestimo -->
                     <div class="panel-body">
+                        <span style="font-weight:bold;font-size:16px;">Nome do usuário: </span>
                         <?php echo $emprestimo->id_usuario ?>
                     </div>
                     
