@@ -5,7 +5,7 @@
 		<li>ORGAB</li>
 		<li><a href="livros">Livros</a></li>
 		<li><a href="emprestimos">Emprestimos</a></li>
-		<li><a href="#">Álbuns fotográfios</a></li>
-		<li><a href="#">Usuários</a></li>
+		<li><a href="eventos">Álbuns fotográfios</a></li>
+		<li><a href="usuarios">Usuários</a></li>
 	</ul>
 </nav>
