@@ -19,22 +19,28 @@
 
     <!-- Campos do formulário -->
     <div class="form-group">
-        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+        Nome:
+        <input type="text" class="form-control" name="nome" id="nome">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="album" id="album" placeholder="Álbum">
+        Álbum:
+        <input type="text" class="form-control" name="album" id="album">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="prateleira" id="prateleira" placeholder="Prateleira">
+        Prateleira:
+        <input type="text" class="form-control" name="prateleira" id="prateleira">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="ano" id="ano" placeholder="Ano">
+        Ano:
+        <input type="text" class="form-control" name="ano" id="ano">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="cor_album" id="cor_album" placeholder="Cor do álbum">
+        Cor do álbum:
+        <input type="text" class="form-control" name="cor_album" id="cor_album">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="cor_adesivo" id="cor_adesivo" placeholder="Cor do adesivo">
+        Cor do adesivo:
+        <input type="text" class="form-control" name="cor_adesivo" id="cor_adesivo">
     </div>
     <button type="submit" class="btn btn-success pull-right">Adicionar</button>
 </form>

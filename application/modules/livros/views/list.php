@@ -50,8 +50,8 @@
 
                     <!-- Assunto do Livro -->
                     <div class="panel-body">
-                        <?php echo $livro->assunto ?>
                         <span style="font-weight:bold;font-size:16px;">Assunto: </span>
+                        <?php echo $livro->assunto ?>
                     </div>
                     <!-- Idioma do Livro -->
                     <div class="panel-heading">

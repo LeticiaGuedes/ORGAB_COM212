@@ -23,13 +23,15 @@
                     <!-- Data do emprestimo -->
                     <div class="panel-heading">
                         <span style="font-weight:bold;font-size:16px;">Data do empretimo: </span>
-                        <?php echo $emprestimo->data_emprestimo ?>
+                        <?php $d=strtotime($emprestimo->data_emprestimo);
+                            echo date("d/m/Y", $d); ?>
                     </div>
 
                     <!-- Data de Devolução do emprestimo -->
                     <div class="panel-body">
-                        <span style="font-weight:bold;font-size:16px;">Data de devolução: </span>
-                        <?php echo $emprestimo->data_devolucao ?>
+                        <span style="font-weight:bold;font-size:16px;">Data devolução: </span>
+                        <?php $d=strtotime($emprestimo->data_devolucao);
+                            echo date("d/m/Y", $d); ?>
                     </div>
                     <!-- Nome do Livro Emprestado -->
                     <div class="panel-heading">

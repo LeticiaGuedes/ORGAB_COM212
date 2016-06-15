@@ -90,8 +90,6 @@ class Emprestimos extends CI_Controller {
         if(isset($_POST['data_emprestimo'])){
             $emprestimo->data_emprestimo = $_POST['data_emprestimo'];
             $emprestimo->data_devolucao = $_POST['data_devolucao'];
-            $emprestimo->id_livro = $_POST['id_livro'];
-            $emprestimo->id_usuario = $_POST['id_usuario'];
             $emprestimo->save();
         }
 

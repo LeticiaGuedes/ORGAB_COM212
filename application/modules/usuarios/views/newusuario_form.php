@@ -19,13 +19,16 @@
 
     <!-- Campos do formulário -->
     <div class="form-group">
-        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+        Nome:
+        <input type="text" class="form-control" name="nome" id="nome">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone">
+        Telefone:
+        <input type="text" class="form-control" name="telefone" id="telefone">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="endereço" id="endereço" placeholder="Endereço">
+        Endereço:
+        <input type="text" class="form-control" name="endereço" id="endereço">
     </div>
     <button type="submit" class="btn btn-success pull-right">Adicionar</button>
 </form>

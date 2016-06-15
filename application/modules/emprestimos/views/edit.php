@@ -28,19 +28,13 @@
     <!-- Campos do formulário -->
     <div class="form-group">
         <label for="data_emprestimo">Data de Emprestimo</label>
-        <input type="text" value="<?php echo $emprestimo->data_emprestimo ?>" class="form-control" name="data_emprestimo" id="data_emprestimo" placeholder="Data de Emprestimo">
+        <input type="date" value="<?php $d=strtotime($emprestimo->data_emprestimo);
+                            echo date("Y-m-d", $d); ?>" class="form-control" name="data_emprestimo" id="data_emprestimo" placeholder="Data de Emprestimo">
     </div>
     <div class="form-group">
         <label for="data_devolucao">Data de Devolução</label>
-        <input type="text" value="<?php echo $emprestimo->data_devolucao ?>" class="form-control" name="data_devolucao" id="data_devolucao" placeholder="Data de Devolução">
-    </div>
-    <div class="form-group">
-        <label for="id_livro">Titulo do Livro</label>
-        <input type="text" value="<?php echo $emprestimo->id_livro ?>" class="form-control" name="id_livro" id="id_livro" placeholder="Titulo do Livro">
-    </div>
-    <div class="form-group">
-        <label for="id_usuario">Nome do Usuário</label>
-        <input type="text" value="<?php echo $emprestimo->id_usuario ?>" class="form-control" name="id_usuario" id="id_usuario" placeholder="Nome do Usuário">
+        <input type="date" value="<?php $d=strtotime($emprestimo->data_devolucao);
+                            echo date("Y-m-d", $d); ?>" class="form-control" name="data_devolucao" id="data_devolucao" placeholder="Data de Devolução">
     </div>
 
     <button type="submit" class="btn btn-success pull-right">Adicionar</button>

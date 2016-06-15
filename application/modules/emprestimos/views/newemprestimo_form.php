@@ -19,16 +19,44 @@
 
     <!-- Campos do formulário -->
     <div class="form-group">
-        <input type="text" class="form-control" name="data_emprestimo" id="data_emprestimo" placeholder="Data de Emprestimo">
+        Data de Emprestimo: 
+        <input type="date" value="<?php echo date("Y-m-d"); ?>" class="form-control" name="data_emprestimo" id="data_emprestimo">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="data_devolucao" id="data_devolucao" placeholder="Data de Devolução">
+        Data de Devolução: 
+        <input type="date" value="<?php echo date("Y-m-d"); ?>" class="form-control" name="data_devolucao" id="data_devolucao">
     </div>
+    <?php // Obtém instância do CodeIgniter
+        $CI1 =& get_instance();
+
+        // Carregando biblioteca do banco de dados
+        $CI1->load->database();
+
+        // Obtém todos os posts
+        $CI1->db->order_by("titulo", "cresc");
+        $result1 = $CI1->db->get('livros')->result(); ?>
     <div class="form-group">
-        <input type="text" class="form-control" name="id_livro" id="id_livro" placeholder="Titulo do Livro">
+        Titulo do Livro:
+        <select name="id_livro" class="form-control" id="id_livro">
+            <?php foreach ($result1 as $livro) { ?>
+            <option><?php echo $livro->titulo; } ?>
+    </select> 
     </div>
+    <?php // Obtém instância do CodeIgniter
+        $CI2 =& get_instance();
+
+        // Carregando biblioteca do banco de dados
+        $CI2->load->database();
+
+        // Obtém todos os posts
+        $CI2->db->order_by("nome", "cresc");
+        $result2 = $CI2->db->get('usuarios')->result(); ?>
     <div class="form-group">
-        <input type="text" class="form-control" name="id_usuario" id="id_usuario" placeholder="Nome do Usuário">
+        Nome do Usuário:
+        <select name="id_usuario" class="form-control" id="id_usuario">
+            <?php foreach ($result2 as $usuario) { ?>
+            <option><?php echo $usuario->nome; } ?>
+    </select> 
     </div>
     <button type="submit" class="btn btn-success pull-right">Adicionar</button>
 </form>

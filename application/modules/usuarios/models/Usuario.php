@@ -30,6 +30,7 @@ class Usuario extends CI_Model {
             $this->nome = $result->nome;
             $this->telefone = $result->telefone;
             $this->endereço = $result->endereço;
+            $this->quant_emprestimos = $result->quant_emprestimos;
         }
 
 

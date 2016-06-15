@@ -19,28 +19,36 @@
 
     <!-- Campos do formulário -->
     <div class="form-group">
-        <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Titulo">
+        Titulo:
+        <input type="text" class="form-control" name="titulo" id="titulo">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="autor" id="autor" placeholder="Autor">
+        Autor:
+        <input type="text" class="form-control" name="autor" id="autor">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="prateleira" id="prateleira" placeholder="Prateleira">
+        Prateleira:
+        <input type="text" class="form-control" name="prateleira" id="prateleira">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="edicao" id="edicao" placeholder="Edição">
+        Edição:
+        <input type="text" class="form-control" name="edicao" id="edicao">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="ano" id="ano" placeholder="Ano">
+        Ano:
+        <input type="text" class="form-control" name="ano" id="ano">
     </div>
     <div class="form-group">
-        <textarea class="form-control" rows="6" name="assunto" id="assunto" placeholder="Assunto..."></textarea>
+        Assunto:
+        <textarea class="form-control" rows="6" name="assunto" id="assunto"></textarea>
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="idioma" id="idioma" placeholder="Idioma">
+        Idioma:
+        <input type="text" class="form-control" name="idioma" id="idioma">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="editora" id="editora" placeholder="Editora">
+        Editora:
+        <input type="text" class="form-control" name="editora" id="editora">
     </div>
     <button type="submit" class="btn btn-success pull-right">Adicionar</button>
 </form>
