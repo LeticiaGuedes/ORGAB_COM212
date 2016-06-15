@@ -25,7 +25,7 @@
         <input type="text" class="form-control" name="data_devolucao" id="data_devolucao" placeholder="Data de Devolução">
     </div>
     <div class="form-group">
-        <input type="text" class="form-control" name="id_livro" id="id_livro" placeholder="Nome do Livro">
+        <input type="text" class="form-control" name="id_livro" id="id_livro" placeholder="Titulo do Livro">
     </div>
     <div class="form-group">
         <input type="text" class="form-control" name="id_usuario" id="id_usuario" placeholder="Nome do Usuário">

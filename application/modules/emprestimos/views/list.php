@@ -33,7 +33,7 @@
                     </div>
                     <!-- Nome do Livro Emprestado -->
                     <div class="panel-heading">
-                        <span style="font-weight:bold;font-size:16px;">Nome do livro: </span>
+                        <span style="font-weight:bold;font-size:16px;">Titulo do livro: </span>
                         <?php echo $emprestimo->id_livro ?>
                     </div>
 

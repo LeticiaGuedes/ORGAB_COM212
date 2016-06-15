@@ -35,8 +35,8 @@
         <input type="text" value="<?php echo $emprestimo->data_devolucao ?>" class="form-control" name="data_devolucao" id="data_devolucao" placeholder="Data de Devolução">
     </div>
     <div class="form-group">
-        <label for="id_livro">Nome do Livro</label>
-        <input type="text" value="<?php echo $emprestimo->id_livro ?>" class="form-control" name="id_livro" id="id_livro" placeholder="Nome do Livro">
+        <label for="id_livro">Titulo do Livro</label>
+        <input type="text" value="<?php echo $emprestimo->id_livro ?>" class="form-control" name="id_livro" id="id_livro" placeholder="Titulo do Livro">
     </div>
     <div class="form-group">
         <label for="id_usuario">Nome do Usuário</label>

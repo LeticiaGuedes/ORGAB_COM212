@@ -42,6 +42,7 @@ class Usuarios extends CI_Controller {
         $new_usuario->nome = $_POST['nome'];
         $new_usuario->telefone = $_POST['telefone'];
         $new_usuario->endereço = $_POST['endereço'];
+        $new_usuario->quant_emprestimos = 0;
         $new_usuario->save();
     }
 
