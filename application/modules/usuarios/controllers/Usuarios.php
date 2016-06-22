@@ -46,6 +46,7 @@ class Usuarios extends CI_Controller {
         $CI1->db->order_by("nome", "cresc");
         $this->load->helper('url');
         $result1 = $CI1->db->get('usuarios')->result();
+        //Testa se já existe um usuario com o mesmo nome no BD
         foreach ($result1 as $usuario){
             if(($usuario->nome)==($_POST['nome'])){
                 redirect(base_url('usuarios'));

@@ -46,6 +46,7 @@ class Livros extends CI_Controller {
         $CI1->db->order_by("titulo", "cresc");
         $this->load->helper('url');
         $result1 = $CI1->db->get('livros')->result();
+        //Testa se já existe um livro com o mesmo titulo no BD
         foreach ($result1 as $livro){
             if(($livro->titulo)==($_POST['titulo'])){
                 redirect(base_url('livros'));

@@ -46,6 +46,7 @@ class Eventos extends CI_Controller {
         $CI1->db->order_by("nome", "cresc");
         $this->load->helper('url');
         $result1 = $CI1->db->get('eventos')->result();
+        //Testa se já existe um evento com o mesmo nome e data no BD
         foreach ($result1 as $evento){
             if((($evento->nome)==($_POST['nome']))&&(($evento->ano)==($_POST['ano']))){
                 redirect(base_url('eventos'));
