@@ -36,6 +36,22 @@ class Usuarios extends CI_Controller {
         Adicionar requisições POST no banco de dados.
     */
     public function add () {
+        // Obtém instância do CodeIgniter
+        $CI1 =& get_instance();
+
+        // Carregando biblioteca do banco de dados
+        $CI1->load->database();
+
+        // Obtém todos os posts
+        $CI1->db->order_by("nome", "cresc");
+        $this->load->helper('url');
+        $result1 = $CI1->db->get('usuarios')->result();
+        foreach ($result1 as $usuario){
+            if(($usuario->nome)==($_POST['nome'])){
+                redirect(base_url('usuarios'));
+            }
+        }
+        
         $this->load->model('Usuario');
 
         $new_usuario = new Usuario();

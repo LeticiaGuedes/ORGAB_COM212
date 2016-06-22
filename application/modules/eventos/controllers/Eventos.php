@@ -36,6 +36,21 @@ class Eventos extends CI_Controller {
         Adicionar requisições POST no banco de dados.
     */
     public function add () {
+        // Obtém instância do CodeIgniter
+        $CI1 =& get_instance();
+
+        // Carregando biblioteca do banco de dados
+        $CI1->load->database();
+
+        // Obtém todos os posts
+        $CI1->db->order_by("nome", "cresc");
+        $this->load->helper('url');
+        $result1 = $CI1->db->get('eventos')->result();
+        foreach ($result1 as $evento){
+            if((($evento->nome)==($_POST['nome']))&&(($evento->ano)==($_POST['ano']))){
+                redirect(base_url('eventos'));
+            }
+        }
         $this->load->model('Evento');
 
         $new_evento = new Evento();

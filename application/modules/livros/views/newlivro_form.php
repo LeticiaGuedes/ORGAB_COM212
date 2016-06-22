@@ -18,10 +18,13 @@
     <?php endif ?>
 
     <!-- Campos do formulário -->
+    <?php 
+    ?>
     <div class="form-group">
         Titulo:
         <input type="text" class="form-control" name="titulo" id="titulo">
     </div>
+    
     <div class="form-group">
         Autor:
         <input type="text" class="form-control" name="autor" id="autor">

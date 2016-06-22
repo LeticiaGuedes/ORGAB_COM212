@@ -36,9 +36,25 @@ class Livros extends CI_Controller {
         Adicionar requisições POST no banco de dados.
     */
     public function add () {
+        // Obtém instância do CodeIgniter
+        $CI1 =& get_instance();
+
+        // Carregando biblioteca do banco de dados
+        $CI1->load->database();
+
+        // Obtém todos os posts
+        $CI1->db->order_by("titulo", "cresc");
+        $this->load->helper('url');
+        $result1 = $CI1->db->get('livros')->result();
+        foreach ($result1 as $livro){
+            if(($livro->titulo)==($_POST['titulo'])){
+                redirect(base_url('livros'));
+            }
+        }
         $this->load->model('Livro');
 
         $new_livro = new Livro();
+        
         $new_livro->titulo = $_POST['titulo'];
         $new_livro->autor = $_POST['autor'];
         $new_livro->prateleira = $_POST['prateleira'];
@@ -64,6 +80,7 @@ class Livros extends CI_Controller {
 
             $livro = new Livro($id);
             $livro->delete();
+            echo "Livro já existe!";
 
             redirect(base_url('livros'));
         }
