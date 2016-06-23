@@ -7,5 +7,6 @@
 		<li><a href="emprestimos">Emprestimos</a></li>
 		<li><a href="eventos">Álbuns fotográfios</a></li>
 		<li><a href="usuarios">Usuários</a></li>
+		<li><a href="relatorios">Relatórios</a></li>
 	</ul>
 </nav>
