@@ -64,6 +64,7 @@ class Livros extends CI_Controller {
         $new_livro->assunto = $_POST['assunto'];
         $new_livro->idioma = $_POST['idioma'];
         $new_livro->editora = $_POST['editora'];
+        $new_livro->total_emp = 0;
         $new_livro->save();
     }
 
